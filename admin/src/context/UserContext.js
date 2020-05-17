@@ -6,7 +6,7 @@ const AuthContext = React.createContext();
 
 function AuthProvider({children}) {
   const [state, setState] = React.useState({
-    status: 'pending',
+    status: 'login',
     error: null,
     user: null,
   })

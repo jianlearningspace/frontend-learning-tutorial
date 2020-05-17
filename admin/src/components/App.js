@@ -5,8 +5,8 @@ import Home from '../pages/home/Home';
 import Login from '../pages/login/Login'
 
 function App() {
-  const {user} = useAuthState()
-  return user ? <Home /> : <Login />;
+  const {isAuthenticated} = useAuthState()
+  return isAuthenticated ? <Home /> : <Login />;
 }
 
 export default App;
